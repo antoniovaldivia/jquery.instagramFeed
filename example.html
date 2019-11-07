@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> </script>
+    <script src="js/jquery.instagramFeed.js"></script>
+    <style>
+
+    </style>
+
+    <script>
+        (function($){
+            $(window).on('load', function(){
+                $.instagramFeed({
+                    'username': 'toneid',
+                    'container': "#instafeed",
+                    'display_profile': false,
+                    'display_biography': false,
+                    'display_gallery': true,
+                    'callback': null,
+                    'styling': true,
+                    'items': 8,
+                    'items_per_row': 4,
+                    'margin': 1 
+                });
+            });
+        })(jQuery);
+    </script>
+
+
+<body>
+    <div id="instafeed" >
+</div>
+</body>
+</html>
